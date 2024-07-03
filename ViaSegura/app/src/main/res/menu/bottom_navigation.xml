@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inicio"
+        android:icon="@drawable/inicio"
+        android:title="Inicio"/>
+
+    <item
+        android:id="@+id/denunciar"
+        android:icon="@drawable/alarma"
+        android:title="Denunciar"/>
+
+    <item
+        android:id="@+id/misdenuncias"
+        android:icon="@drawable/acta"
+        android:title="Actas" />
+
+    <item
+        android:id="@+id/filtros"
+        android:icon="@drawable/mapa"
+        android:title="Reportes" />
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ViaSegura</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mis_denuncias">Mis Denuncias</string>
+    <string name="title_activity_cmapa">CMapa</string>
+    <string name="title_activity_maps_prueba">MapsActivityPrueba</string>
+    <string name="title_activity_mapa_fechas">ActivityMapaFechas</string>
+    <string name="title_activity_mapa_todo">ActivityMapaTodo</string>
+    <string name="title_activity_mapa">MapaActivity</string>
+</resources>

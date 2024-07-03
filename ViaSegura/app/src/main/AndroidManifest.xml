@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.viasegura">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- Permiso para acceder a Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ViaSegura"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBi3WK7hUoh2lJi-dx-sBYWMHdrlZEVtac" />
+
+        <activity
+            android:name=".PRESENTACION.MapaFragmentMisDenuncias"
+            android:exported="false"
+            android:label="@string/title_activity_mapa" />
+        <activity
+            android:name=".PRESENTACION.MostrarDenunciasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PRESENTACION.ActivityMapaTodo"
+            android:exported="false"
+            android:label="@string/title_activity_mapa_todo" />
+        <activity
+            android:name=".PRESENTACION.ActivityMapaFechas"
+            android:exported="false"
+            android:label="@string/title_activity_mapa_fechas" />
+        <activity
+            android:name=".NEGOCIOS.CMapa"
+            android:exported="false"
+            android:label="@string/title_activity_cmapa" />
+        <activity
+            android:name=".PRESENTACION.ActivityInicio"
+            android:exported="false" />
+        <activity
+            android:name=".PRESENTACION.ActivityRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".PRESENTACION.ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".PRESENTACION.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

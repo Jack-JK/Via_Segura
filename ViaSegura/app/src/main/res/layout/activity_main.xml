@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".PRESENTACION.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="253dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/viasegura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LogoAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Vía Segura"
+        android:textColor="#2BB775"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+
+    <TextView
+        android:id="@+id/SloganAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Juntos por un Tráfico Seguro"
+        android:textSize="14sp"
+        android:textStyle="normal|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoAppText" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="108dp"
+        android:onClick="GoLogin"
+        android:text="Iniciar Sesión"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SloganAppText" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:onClick="GoRegister"
+        android:text="Regístrate"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
