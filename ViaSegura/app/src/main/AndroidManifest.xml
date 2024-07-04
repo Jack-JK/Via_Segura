@@ -37,7 +37,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBi3WK7hUoh2lJi-dx-sBYWMHdrlZEVtac" />
+            android:value="AGREGA TU API KEY DE GOOGLE AQUI" />
 
         <activity
             android:name=".PRESENTACION.MapaFragmentMisDenuncias"
